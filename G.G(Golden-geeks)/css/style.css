@@ -1,0 +1,196 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: black;
+}
+.nav
+{
+    color: #fff;
+    height: 70px;
+    text-align: center;
+    border: 1px solid black;
+    border-bottom-color:#333;
+    opacity: 0.7;
+}
+.logo
+{
+    height: auto;
+    width: 200px;
+}
+.nav-links
+{
+    list-style: none;
+    width: auto;
+    margin-top: -50px;
+    float: right;
+    margin-right: 20px;
+}
+.nav li{
+    display: inline-block;
+    margin-left: 40px;
+    cursor: pointer;
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.nav li a:hover{
+    color: aqua;
+    cursor: pointer;
+}
+.container
+{
+    height:500px;
+    width: 100%;
+    margin-top: 40px;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.writing
+{
+    height:auto;
+    width: 30%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 30px;
+    margin-left: 50px;
+    margin-bottom: 60px;
+}
+.para1
+{
+    color: #fff;
+    font-family: "Lato";
+    font-weight: 500;
+     
+}
+.para2
+{
+    color: #fff;
+    font-family: "Lato";
+    font-size: 25px;
+    font-weight: 500;
+}
+.vid
+{
+    height: auto;
+    width: 70%;
+    /* background-color: yellow; */
+}
+.backvid
+{
+    position: relative;
+    right: -100px;
+    height: 500px;
+    width: 500px;
+}
+@keyframes slidefromleft
+{
+    from
+    {
+        transform: translateX(-300px);
+    }
+    to 
+    {
+        transform: translateX(0);
+    }
+}
+@keyframes slidefromright
+{
+    from
+    {
+        transform: translateX(300px);
+    }
+    to 
+    {
+        transform: translateX(0);
+    }
+}
+.writing
+{
+    animation: slidefromleft 1s  0.3s ;
+}
+@keyframes slidefromup
+{
+    from
+    {
+        transform: translateY(-300px);
+    }
+    to 
+    {
+        transform: translateY(0);
+    }
+}
+.nav-links
+{
+    animation: slidefromright 1.5s 0.5s  ;
+}
+.logoimg
+{
+    animation: slidefromleft 1.5s 0.3s ;
+}
+.entry
+{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.getuser
+{
+    animation: slidefromleft 1.5s 0.3s ;
+}
+.getuser
+{
+    position: absolute;
+    top: 400px;
+    left: 70px;
+    height: 70px;
+    width: 250px;
+    margin-left: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: aqua;
+    font-size: 30px;
+    font-family: "Bonheur Royale", cursive;
+    font-weight: 400;
+    font-style: normal;  
+}
+.getuser a
+{
+    color: black;
+}
+.ending
+{
+    background-image: url(/assets/contact.jpg);
+    height: 270px;
+    width: 100%;
+}
+.end1
+{ 
+    height: auto;
+    width: 400px;
+    position: absolute;
+    top: 690px;
+    left: 0px;
+}
+.endcontent
+{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.endcontent li
+{
+    margin-top: 20px;
+    
+}
